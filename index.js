@@ -14,19 +14,19 @@ let snakeArr = [
 
 food = {x: 6, y: 7};
 
-//music function
-// function muteUnmute(){
-//     let checkMusic=document.getElementById("btn");
-//     if(checkMusic.className=="muteMusic"){
-//         checkMusic.innerHTML=`<img src="/images/mute.png" width="40px" height="40px">`;
-//         musicSound.pause();
-//         checkMusic.className="unmuteMusic";
-//     }else{
-//         checkMusic.innerHTML=`<img src="/images/unmuteIcon.svg" width="40px" height="40px">`;
-//         musicSound.play();
-//         checkMusic.className="muteMusic";
-//     }
-// }
+// music function
+function muteUnmute(){
+    let checkMusic=document.getElementById("btn");
+    if(checkMusic.className=="muteMusic"){
+        checkMusic.innerHTML=`<img src="/images/mute.png" width="40px" height="40px">`;
+        musicSound.pause();
+        checkMusic.className="unmuteMusic";
+    }else{
+        checkMusic.innerHTML=`<img src="/images/unmuteIcon.svg" width="40px" height="40px">`;
+        musicSound.play();
+        checkMusic.className="muteMusic";
+    }
+}
 
 // Game Functions
 function main(ctime) {
@@ -67,7 +67,7 @@ function gameEngine(){
         score = 0; 
     }
 
-    // If you have eaten the food, increment the score and regenerate the food
+    // If snake have eaten the food, increament the score and regenerate the food
     if(snakeArr[0].y === food.y && snakeArr[0].x ===food.x){
         foodSound.play();
         score += 1;
@@ -119,7 +119,7 @@ function gameEngine(){
 
 
 // Main logic starts here
-// musicSound.play();
+
 let hiscore = localStorage.getItem("hiscore");
 if(hiscore === null){
     hiscoreval = 0;
@@ -136,7 +136,7 @@ window.requestAnimationFrame(main);
 window.addEventListener("keydown", e =>{
     inputDir = {x: 0, y: 1} // Start the game
     moveSound.play();
-    musicSound.play();
+    // musicSound.play();
     switch (e.key) {
         case "ArrowUp":
             console.log("ArrowUp");

@@ -1,19 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins&family=Radio+Canada:wght@300&family=Roboto:wght@100;300;400&display=swap');
 
+
+/* for small devices */
+@media screen and (max-width: 945px) {
+    
+        .body {
+            background-image: url("/images/media-img.jpg");
+            min-height: 100vh;
+            background-size: 100vw 100vh;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        h1{
+            position: absolute;
+            margin: auto;
+            top: 5px;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Odibee Sans', cursive;
+            color: whitesmoke;
+            text-decoration:underline;
+        }
+        #scoreBox{
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Odibee Sans', cursive;
+            color: whitesmoke;
+        }
+        #hiscoreBox{
+            color: whitesmoke;
+            position: absolute;
+            top: 80px;
+            left: 10px;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Odibee Sans', cursive;
+        }
+        #btn{
+    
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            width: 50px;
+            height: 50px; 
+        }
+      
+  }
+  
+  /* for desktop or window size */
+  @media screen and (min-width: 945px) {
+    
+    .body{
+        background: url("images/background-img.jpg");
+        min-height: 100vh;
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: 'Odibee Sans', cursive;
+        color: whitesmoke;
+        text-decoration:underline;
+    }
+    #scoreBox{
+        position: absolute;
+        top: 120px;
+        left: 10px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Odibee Sans', cursive;
+        color: whitesmoke;
+    }
+    #hiscoreBox{
+        color: whitesmoke;
+        position: absolute;
+        top: 180px;
+        left: 10px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Odibee Sans', cursive;
+    }
+    #btn{
+    
+        position: absolute;
+        top: 250px;
+        left: 10px;
+        width: 50px;
+        height: 50px; 
+    }
+}
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
-.body{
-    background: url("images/background-img.jpg");
-    min-height: 100vh;
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 #board {
     /* margin-right: 21px; */
@@ -27,69 +123,22 @@
 
 }
 
-#scoreBox{
-    position: absolute;
-    top: 120px;
-    left: 10px;
-    font-size: 35px;
-    font-weight: bold;
-    font-family: 'Odibee Sans', cursive;
-    color: whitesmoke;
-}
-
-h1{
-    position: absolute;
-    top: 9px;
-    left: 10px;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: 'Odibee Sans', cursive;
-    color: whitesmoke;
-    text-decoration:underline;
-}
-
-#hiscoreBox{
-    color: whitesmoke;
-    position: absolute;
-    top: 180px;
-    left: 10px;
-    font-size: 35px;
-    font-weight: bold;
-    font-family: 'Odibee Sans', cursive;
-}
-
-
 .head{
     background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
     border: 2px solid rgb(34, 4, 34); 
     transform: scale(1.02);
-    border-radius: 9px;
+    border-radius: 10px;
 }
 
 .snake{
     background-color: purple;
     border: .25vmin solid white;
-    border-radius: 12px;
+    border-radius: 20px;
 }
 
 .food{
     background: linear-gradient(red, purple);
     border: .25vmin solid black;
-    border-radius: 8px;
+    border-radius: 20px;
 }
 
-/* .muteMusic{
-    position: absolute;
-    top: 250px;
-    left: 10px;
-    width: 50px;
-    height: 50px; 
-} */
-/* #btn{
-    
-    position: absolute;
-    top: 250px;
-    left: 10px;
-    width: 50px;
-    height: 50px; 
-} */
