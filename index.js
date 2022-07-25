@@ -22,7 +22,7 @@ function muteUnmute(){
         musicSound.pause();
         checkMusic.className="unmuteMusic";
     }else{
-        checkMusic.innerHTML=`<img src="/images/unmuteIcon.svg" width="40px" height="40px">`;
+        checkMusic.innerHTML='<img src="/images/unmuteIcon.svg" width="40px" height="40px">';
         musicSound.play();
         checkMusic.className="muteMusic";
     }
