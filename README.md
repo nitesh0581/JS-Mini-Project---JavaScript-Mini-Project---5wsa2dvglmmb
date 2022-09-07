@@ -1,4 +1,4 @@
-# html-css-js-project-boilerplate
+# Javascript Project
 
 Project Name: The Hungry Snake
 
