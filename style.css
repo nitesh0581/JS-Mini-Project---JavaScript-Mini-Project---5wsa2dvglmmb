@@ -43,7 +43,7 @@
             font-family: 'Odibee Sans', cursive;
         }
         #btn{
-             border-radius: 25px;
+            border-radius: 25px;
             position: absolute;
             top: 50px;
             right: 10px;
@@ -95,6 +95,7 @@
     }
     #btn{
        
+        border-radius: 25px;
         position: absolute;
         top: 250px;
         left: 10px;
