@@ -43,7 +43,7 @@
             font-family: 'Odibee Sans', cursive;
         }
         #btn{
-    
+            background:transparent;
             position: absolute;
             top: 50px;
             right: 10px;
@@ -94,12 +94,13 @@
         font-family: 'Odibee Sans', cursive;
     }
     #btn{
-    
+       
         position: absolute;
         top: 250px;
         left: 10px;
         width: 50px;
         height: 50px; 
+        border-radius: 25px;
     }
 }
 
